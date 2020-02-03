@@ -1,0 +1,112 @@
+ro.tee_support=1
+ro.mtk_trustkernel_tee_support=1
+ro.faceunlock.tee=trustkernel
+ro.qsb.in.top=1
+persist.sys.bootanim.play_sound=0
+ro.add.shutdown_animation=1
+ro.odm_cit_nfc=0
+ro.odm_cit_finger_print=1
+ro.odm_cit_alsps=1
+ro.odm_cit_gyroscope=0
+ro.odm_cit_hall=0
+ro.odm_cit_otg=0
+ro.odm_cit_main2camera=1
+ro.odm_cit_notificationLight=1
+ro.odm_app_stepcount_feature=1
+ro.mtk_platform=MT6761
+#
+# from device/maisui/e557_cq_9052c_61_p0/system.prop
+#
+#
+# system.prop for generic sdk
+#
+
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+
+
+# MTK, Infinity, 20090720 {
+wifi.interface=wlan0
+# MTK, Infinity, 20090720 }
+
+# MTK, mtk03034, 20101210 {
+ro.mediatek.wlan.wsc=1
+# MTK, mtk03034 20101210}
+# MTK, mtk03034, 20110318 {
+ro.mediatek.wlan.p2p=1
+# MTK, mtk03034 20110318}
+
+# MTK, mtk03034, 20101213 {
+mediatek.wlan.ctia=0
+# MTK, mtk03034 20101213}
+
+
+#
+wifi.tethering.interface=ap0
+#
+
+ro.opengles.version=196610
+#ro.kernel.qemu=1
+#ro.kernel.qemu.gles=0
+
+wifi.direct.interface=p2p0
+#dalvik.vm.heapgrowthlimit=256m
+#dalvik.vm.heapsize=512m
+
+# USB MTP WHQL
+ro.sys.usb.mtp.whql.enable=0
+
+# Power off opt in IPO
+sys.ipo.pwrdncap=2
+
+ro.sys.usb.storage.type=mtp
+
+# USB BICR function
+ro.sys.usb.bicr=no
+
+# USB Charge only function
+ro.sys.usb.charging.only=yes
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+ro.zygote.preload.enable=0
+
+# temporary enables NAV bar (soft keys)
+qemu.hw.mainkeys=0
+
+ro.kernel.zio=38,108,105,16
+#ro.kernel.qemu=1
+#ro.kernel.qemu.gles=0
+#ro.boot.selinux=disable
+
+# Disable dirty region for Mali
+#debug.hwui.render_dirty_regions=false
+
+# Use density from lcm driver
+#ro.sf.lcd_density=480
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+#add EWWQ-921 xudong.zhang 20190515 start
+ro.odm_custom_signal=cq
+#add EWWQ-921 xudong.zhang 20190515 end
+
+# disable ipo for development
+sys.ipo.disable=1
+
+ro.odm_main2_camera=1
+com.mtk.camera.support_main2=true
+
+# Add by HZH on 2019/5/15 for EWWQ-883 start ^_^
+persist.sys.timezone=America/Chicago
+# Add by HZH on 2019/5/15 for EWWQ-883 end ^_^
+
+#add BUG_ID:EWWQ-922 chenyu 20190515 (start)
+ro.setupwizard.enable_bypass=true
+#add BUG_ID:EWWQ-922 chenyu 20190515 (end)
+#
